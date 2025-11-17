@@ -1,0 +1,1 @@
+SELECT DATE_TRUNC('month', order_date) AS order_month, COUNT(DISTINCT order_id) AS total_orders, SUM(total_amount) AS total_revenue, AVG(total_amount) AS avg_order_value FROM ecommerce.orders WHERE order_status = 'Completed' GROUP BY order_month ORDER BY order_month;
