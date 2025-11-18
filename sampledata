@@ -1,0 +1,15 @@
+-- Insert sample customers 
+INSERT INTO ecommerce.customers VALUES (
+    1, 'John', 'Smith', 'john.smith@email.com', '2023-01-15', 'USA', 'New York'), (2, 'Maria', 'Garcia', 'maria.garcia@email.com', '2023-02-20', 'Spain', 'Madrid'), (3, 'Chen', 'Wei', 'chen.wei@email.com', '2023-03-10', 'China', 'Beijing'), (4, 'Sarah', 'Johnson', 'sarah.j@email.com', '2023-04-05', 'USA', 'Los Angeles'), (5, 'Ahmed', 'Hassan', 'ahmed.h@email.com', '2023-05-12', 'Egypt', 'Cairo'), (6, 'Emma', 'Brown', 'emma.brown@email.com', '2023-06-08', 'UK', 'London'), (7, 'Pierre', 'Martin', 'pierre.m@email.com', '2023-07-22', 'France', 'Paris'), (8, 'Yuki', 'Tanaka', 'yuki.t@email.com', '2023-08-14', 'Japan', 'Tokyo'), (9, 'Carlos', 'Rodriguez', 'carlos.r@email.com', '2023-09-01', 'Mexico', 'Mexico City'), (10, 'Lisa', 'Anderson', 'lisa.a@email.com', '2023-10-18', 'USA', 'Chicago');
+ 
+-- Insert sample products 
+INSERT INTO ecommerce.products VALUES (
+    101, 'Laptop Pro 15', 'Electronics', 1299.99, 'TechCorp'), (102, 'Wireless Mouse', 'Electronics', 29.99, 'TechCorp'), (103, 'Office Chair Premium', 'Furniture', 399.99, 'ComfortSeating'), (104, 'Standing Desk', 'Furniture', 599.99, 'ComfortSeating'), (105, 'Noise-Canceling Headphones', 'Electronics', 249.99, 'AudioMax'), (106, 'Ergonomic Keyboard', 'Electronics', 89.99, 'TechCorp'), (107, 'Monitor 27 inch', 'Electronics', 349.99, 'DisplayTech'), (108, 'Desk Lamp LED', 'Furniture', 49.99, 'BrightLights'), (109, 'USB-C Hub', 'Electronics', 59.99, 'TechCorp'), (110, 'Webcam HD', 'Electronics', 79.99, 'VideoTech'); 
+
+-- Insert sample orders 
+INSERT INTO ecommerce.orders VALUES (
+    1001, 1, '2024-01-10', 1329.98, 'Completed'), (1002, 2, '2024-01-12', 399.99, 'Completed'), (1003, 3, '2024-01-15', 1949.97, 'Completed'), (1004, 1, '2024-02-01', 249.99, 'Completed'), (1005, 4, '2024-02-05', 649.98, 'Shipped'), (1006, 5, '2024-02-10', 89.99, 'Completed'), (1007, 6, '2024-03-01', 1299.99, 'Processing'), (1008, 7, '2024-03-15', 449.98, 'Completed'), (1009, 8, '2024-04-01', 599.99, 'Shipped'), (1010, 9, '2024-04-10', 339.98, 'Completed'), (1011, 10, '2024-04-20', 1649.97, 'Completed'), (1012, 1, '2024-05-01', 79.99, 'Completed'); 
+    
+-- Insert sample order items 
+INSERT INTO ecommerce.order_items VALUES (
+    1, 1001, 101, 1, 1299.99, 0), (2, 1001, 102, 1, 29.99, 0), (3, 1002, 103, 1, 399.99, 0), (4, 1003, 101, 1, 1299.99, 0), (5, 1003, 107, 1, 349.99, 0), (6, 1003, 102, 1, 29.99, 10), (7, 1003, 106, 1, 89.99, 10), (8, 1004, 105, 1, 249.99, 0), (9, 1005, 104, 1, 599.99, 0), (10, 1005, 108, 1, 49.99, 0), (11, 1006, 106, 1, 89.99, 0), (12, 1007, 101, 1, 1299.99, 0), (13, 1008, 103, 1, 399.99, 0), (14, 1008, 108, 1, 49.99, 0), (15, 1009, 104, 1, 599.99, 0), (16, 1010, 107, 1, 349.99, 0), (17, 1011, 101, 1, 1299.99, 0), (18, 1011, 107, 1, 349.99, 0), (19, 1012, 110, 1, 79.99, 0);
